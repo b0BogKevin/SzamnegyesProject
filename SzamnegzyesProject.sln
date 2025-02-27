@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared", "Shared\Shared.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "szamegyenes2", "szamegyenes2\szamegyenes2.csproj", "{946462E9-B756-494B-953D-53318CFA3ABC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "szamnegyes4", "szamnegyes4\szamnegyes4.csproj", "{46F9D4C9-4794-499E-B855-67E27504CF51}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "szamnegyes3", "szamnegyes4\szamnegyes3.csproj", "{46F9D4C9-4794-499E-B855-67E27504CF51}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
