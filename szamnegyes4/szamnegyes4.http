@@ -1,0 +1,6 @@
+@szamnegyes4_HostAddress = http://localhost:5263
+
+GET {{szamnegyes4_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
