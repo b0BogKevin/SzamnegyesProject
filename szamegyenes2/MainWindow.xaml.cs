@@ -53,5 +53,18 @@ namespace szamegyenes2
             h.Text = (Convert.ToInt32(h.Text) + 1).ToString();
             i.Text = (Convert.ToInt32(i.Text) + 1).ToString();
         }
+        private void nulla_Click(object sender, RoutedEventArgs ea)
+        {
+            a.Text = "0";
+            b.Text = "0";
+            c.Text = "0";
+            d.Text = "0";
+            e.Text = "0";
+            f.Text = "0";
+            g.Text = "0";
+            h.Text = "0";
+            i.Text = "0";
+
+        }
     }
 }

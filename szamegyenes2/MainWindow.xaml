@@ -26,6 +26,7 @@
         <Button Grid.Column="4" Grid.Row="0" Click="B_Click">B</Button>
         <Button Grid.Column="0" Grid.Row="4" Click="C_Click">C</Button>
         <Button Grid.Column="4" Grid.Row="4" Click="D_Click">D</Button>
+        <Button Grid.Column="2" Grid.Row="4" Click="nulla_Click">nulláz</Button>
 
         <TextBox x:Name="a" Grid.Column="1" Grid.Row="1" IsReadOnly="True">0</TextBox>
         <TextBox x:Name="b" Grid.Column="2" Grid.Row="1" IsReadOnly="True">0</TextBox>
