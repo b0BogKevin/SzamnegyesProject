@@ -3,7 +3,7 @@ import { ref } from 'vue';
 const szamok = ref("")
 const lekert = ref()
 const kuldes = async()=>{
-  await fetch("https://localhost:7238/api",{
+  await fetch("https://localhost:7238/api/fours",{
     method:"POST",
     body:"[" +szamok.value + "]",
     headers:{
@@ -13,7 +13,7 @@ const kuldes = async()=>{
    
 }
 const keres = async()=>{
-    await fetch("https://localhost:7238/api")
+    await fetch("https://localhost:7238/api/fours")
     .then(resp=>resp.json())
     .then(data=>lekert.value=data)
 }

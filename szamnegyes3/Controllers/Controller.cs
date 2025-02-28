@@ -5,7 +5,7 @@ using szamnegyes3.Models;
 
 namespace szamnegyes3.Controllers
 {
-    [Route("api/")]
+    [Route("api/fours")]
     [ApiController]
     public class Controller : ControllerBase
     {
@@ -15,13 +15,18 @@ namespace szamnegyes3.Controllers
         {
             return Ok(await context.Szamnegyes.ToListAsync());
         }
+        [HttpGet("/{id}")]
+        public async Task<IActionResult> GetByid(Guid id)
+        {
+            return Ok(await context.Szamnegyes.FirstOrDefaultAsync(s=>s.Id == id));
+        }
 
         [HttpPost]
         public async Task<IActionResult> Get([FromBody] int[] szamok)
         {
             if (szamok.Length!=4)
             {
-                return BadRequest("Rosz formátum");
+                return BadRequest("Invalid data");
             }
             if (context.Szamnegyes.Where(s=>s.Szamok==szamok).Count()!=0)
             {
